@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rgister Form</title>
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+	<script type="text/javascript">
+		function validation() {
+			// var user = document.getElementById('user').value;
+			// var pass = document.getElementById('pass').value;
+			// var confirmpass = document.getElementById('conpass').value;
+			// var mobileNumber = document.getElementById('mobileNumber').value;
+			// var emails = document.getElementById('emails').value;
+
+
+
+
+			var fname = document.getElementById('fname').value;
+			// var lname = document.registration.lname;
+			// var NIC = document.registration.NIC;
+			// var contactnumber = document.registration.contactnumber;
+			// var address = document.registration.address;
+			// var email = document.registration.email;
+			// var password = document.registration.password;
+			// var cpassword = document.registration.cpassword;
+
+			// if(!checkEmptyField(fname,lname,NIC,contactnumber,address,email,password,cpassword)){
+			// 	alert("You must fill all fields.");
+			// 	return false;
+			// }
+
+			if(fname == ""){
+				document.getElementById('fname').innerHTML =" ** Please fill the username field";
+				return false;
+			}
+}
+		// 	if(!checkLetters(fname)){
+		// 		alert("Name must have characters only");
+		// 		return false;
+		// 	}}
+		// // 	if(!checkLetters(lname)){
+		// 		alert("Name must have characters only");
+		// 		return false;
+		// 	}
+
+
+		// 	if(!checkEmail(email)){
+		// 		alert("Email format is not valid");
+		// 		return false;
+		// 	}
+
+		// 	if(!checkAlphaNumeric(address)){
+		// 		alert("address must have characters only");
+		// 		return false;
+				
+		// 	}
+		// 	if(!checkNumbers(contactnumber)){
+		// 		alert("contact number should be a numbers only");
+		// 		return false;
+		// 	}
+		// 	if(password.length<8 || password.length >12 ){
+		// 		alert("password length should more than 8 letters");
+			
+		// 	return (false);
+		// 	}
+
+		// 	if((document.registration.password.value)!=(document.registration.cpassword.value)){
+		// 		alert("Password must be equal");
+		// 		return(false);
+		// 	}
+			
+
+		// 	alert("User register successfully");
+
+		// 	return true;
+		// }
+	// function checkEmptyField(fname,lname,NIC,contactnumber,address,email,password,cpassword){
+	// 		if((fname.value == "")||(lname.value == "")||(NIC.value == "")||(contactnumber.value == "")||(address.value == "")||(email.value == "")||(password.value == "")||(cpassword.value == "")){
+				
+	// 			return false;
+	// 		}
+	// 		else{
+	// 			return true;
+	// 		}
+	// 	}	
+
+		
+	// 		function checkEmptyField(fname,lname,NIC,contactnumber,address,email,password,cpassword){
+	// 		if((fname.value == "")||(lname.value == "")||(NIC.value == "")||(contactnumber.value == "")||(address.value == "")||(email.value == "")||(password.value == "")||(cpassword.value == "")){
+				
+	// 			return false;
+	// 		}
+	// 		else{
+	// 			return true;
+	// 		}
+	// 	}	
+
+	// 	function checkLetters(string){
+	// 		var letters = /^[A-Za-z]+$/;
+	// 		if(string.value.match(letters)){
+	// 			return true;
+	// 		}
+	// 		else{
+	// 			return false;
+	// 		}
+	// 	}
+
+	// 	function checkAlphaNumeric(string){
+	// 		var alphanumerics = /^[0-9a-zA-Z- /]+$/;
+	// 		if(string.value.match(alphanumerics)){
+	// 			return true;
+	// 		}
+	// 		else{
+	// 			return false;
+	// 		}
+	// 	}
+
+	// 	function checkNumbers(string){
+	// 		var numbers = /^[0-9]+$/;
+	// 		if(string.value.match(numbers)){
+	// 			return true;
+	// 		}
+	// 		else{
+	// 			return false;
+	// 		}
+	// 	}
+
+	// 	function checkEmail(string){
+	// 		var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	// 		if(string.value.match(emailformat)){
+	// 			return true;
+	// 		}
+	// 		else{
+	// 			return false;
+	// 		}
+	// 	}
+
+	</script>
+</head>
+<div class="wrapper">
+	<div class="top-bar clearfix">
+		<div class="top-bar-link">
+		<ul>
+		<li><a href="signup.html">Sign Up</a></li>
+		<li><a href="main.html">Sign In</a></li>
+		<li><a href="#">promation News</a></li>
+		</ul>	
+		</div>
+		<div class="top-bar-search">
+			<form method="get" action="regi.html"></form>
+			<input type="search" name="Search-box">
+			<button type="submit"></button>		
+		</div>
+	</div>	
+	<header class="clearfix">
+			<div class="logo">
+				<img src="img/lo.png">
+			</div>
+			<div class="social-media">
+				<ul>
+					<li><a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-fw"></i></a></li>
+					<li><a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-fw"></i></a></li>
+					<li><a href="http://www.pinterest.com"><i class="fab fa-pinterest-square fa-fw"></i></a></li>
+					<li><a href="http://www.google.com"><i class="fab fa-google fa-fw"></i></a></li>
+				</ul>
+			</div>
+	</header>
+	<div class="menu-bar">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">Occaptions</a>
+				<ul>
+					<li><a href="home.html"> Weeding  </a></li>
+					<li><a href="#"> Birthday </a></li>
+					<li><a href="#"> Othrs    </a></li>
+				</ul>
+			</li>
+				<li><a href="gallery.html">Galley</a></li>
+				<li><a href="aboutus.html">About Us</a>
+					<ul>
+						<li><a href="#">Our Team</a></li>
+						<li><a href="#">Mission &amp; Vision</a></li>
+						<li><a href="#">Resources</a></li>
+					</ul>
+				</li>
+				<li><a href="contactus.html">Contact Us</a></li>
+		</ul>
+		
+	</div>
+	<hr>
+	<hr>
+	<div>
+		
+		<fieldset class="fieldset-form">
+			<legend>Member Registation Form</legend>
+
+			<form name="registration" onsubmit="return validation();">
+			<table class="table-register" width="600" border="0">
+
+  <tbody >
+    <tr>
+      <td width="216" height="45"><label for="textfield">First Name:</label>
+        </td>
+      <td width="155"><input type="text" name="fname" class="form-control" id="fname" autocomplete="off"></td>
+      <span id="fname" class="text-danger font-weight-bold"> </span>
+    </tr>
+
+    <tr>
+      <td width="216" height="45"><label for="textfield">Last Name:</label>
+        </td>
+      <td width="155"><input class="text-box" type="text" name="lname" placeholder=" Last Name"></td>
+    </tr>
+
+    <tr>
+      <td height="45"><label for="date"> Date of birth :</label>
+        </td>
+        <td><input class="text-box" type="date" name="date" id="date"></td>
+    </tr>
+
+    <tr>
+      <td height="45"><label for="textfield3">NIC Number:</label>
+       </td>
+      <td> <input class="text-box" type="text" name="NIC" placeholder=" NIC"></td>
+    </tr>
+    <tr>
+      <td height="45"><label for="textfield3">Contact Number:</label>
+       </td>
+      <td> <input class="text-box" type="text" name="contactnumber" placeholder=" Contact Number"></td>
+    </tr>
+
+    <tr>
+      <td height="45"><label for="textfield3">Residen Address:</label>
+        </td>
+      <td><input  class="Address" type="text" name="address" placeholder=" Address"></td>
+    </tr>
+   
+    <tr >
+      <td >
+      	<fieldset class="gender-f" >
+	<legend class="gender-field">Gender</legend>
+	
+      <input class="Female" type="radio" name="radio" id="radio" value="radio">Male
+         <label for="radio"></label>
+         <input class="Female" type="radio" name="radio" id="radio2" value="radio">
+          <label for="radio2">Female</label>
+</fieldset></td>     
+        </tr>
+         <tr>
+      <td height="45"><label for="email">Email Address:</label>
+        </td>
+        <td><input class="text-box" type="email" name="email" id="email" placeholder=" Email Address"></td>
+    </tr>
+     <tr>
+      <td height="45"><label for="password">Create a Password:</label>
+        </td>
+      <td><input class="text-box" type="password" name="password" id="password" placeholder=" *********"></td>
+    </tr>
+    <tr>
+      <td height="45"><label for="password">Confirm Password:</label>
+        </td>
+      <td><input class="text-box" type="password" name="cpassword" id="cpassword" placeholder=" *********"></td>
+    </tr>
+    <tr>
+    	<td>
+    	</td>
+    </tr>
+    <tr>
+      <td height="59">&nbsp;</td>
+      <td><input class="button-submit" type="submit" name="submit" id="button" value="Create User"></td>
+    </tr>
+  </tbody>
+</table>
+</form>
+		</fieldset>
+		<hr>
+	</div>
+	<div class="bottom-bar">
+		<p>c Copyright 2018-Golden Gate</p>
+		
+	</div>
+</div>
+<body>
+
+</body>
+</html>

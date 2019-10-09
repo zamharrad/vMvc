@@ -1,0 +1,75 @@
+<!Doctype htm>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Golden Gate Cake Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript">
+	
+	function validation()
+	{
+		var email = document.login.email;
+		var password = document.login.password;
+
+		if(!checkEmptyField(email,password)){
+				alert("You must fill all fields.");
+				return false;
+			}
+
+		if(!checkEmail(email)){
+				alert("Email format is not valid");
+				return false;
+			}
+
+		alert("Successfully logged!");
+
+		return true;
+
+	}
+	function checkEmptyField(email,password){
+			if((password.value == "")||(email.value == "")){
+				
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+		function checkEmail(string){
+			var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			if(string.value.match(emailformat)){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+</script>
+
+</head>
+<body background="img/wp.jpg">
+<div><!-- Wrapper -->
+<nav>	
+	<ul>
+		<a href="home.html"><img src="img/home_button.png" ></a>	
+	</ul>
+</nav>
+
+	<div class="loginBox">
+		<img src="img/home.png" alt="userImage" class="user">
+		<h2> LOG IN HERE </h2>
+		<form name="login" onsubmit="return validation()">
+			<p>Email</p>
+			<input type="text" name="email" placeholder=" Email Address">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="*  *  *  *  *  *  *">
+			<input type="submit" name="submit" value="SIGN IN" >
+			<a href="#">Forget Password</a>
+			<input type="submit" name="submit" value="SIGN UP">
+		</form>
+			<hr/><hr/>
+	</div>
+
+	</div>
+</body>
+</html>

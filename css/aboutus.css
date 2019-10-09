@@ -1,0 +1,159 @@
+.clearfix { overflow: auto; }
+div.wrapper{
+	margin:0px auto;
+	width: 1000px;
+}
+div.top-bar{
+	background-color: maroon;
+	width: 1000px;
+}
+.top-bar-link
+{
+	float: left;
+	margin: 0px;
+} 
+.top-bar-link ul li{
+	padding: 1px 10px;
+	border-right: solid 1px white;
+	display: inline-block;
+}
+.top-bar-link a
+{
+	color: white;
+}
+.top-bar-link a:hover{
+	color: red;
+}
+.top-bar-link ul li:last-child{
+	border:none;
+}
+.top-bar-search{
+	padding: 3px 10px;
+	float: right;
+	margin: 15px;
+	background:white;
+	border-radius: 10px;
+}
+.top-bar-search input{
+
+	border: none;
+}
+.top-bar-search button
+{
+	height: 20px;
+	float: right;
+	width: 25px;
+	border-radius: 5px;
+background:url(../img/searc.png);
+}
+div.logo{
+	float: left;
+}
+div.social-media {
+	float: right;
+}
+
+div.social-media ul{
+	list-style: none;
+}
+
+div.social-media ul li{
+	display: inline;
+}
+.social-media ul li a {
+	padding: 6px;
+	text-align: center;
+	background:#444;
+	color:#fff;
+	display:inline-block;
+	border-radius: 20px;
+	margin:5px 5px;
+}
+.social-media ul li a:last-child{
+	margin-right: 20px;
+}
+.social-media ul li a:hover{
+	background-color: red;
+}
+.menu-bar
+{
+width: 1000px;
+height: 30px;
+border-radius: 6px;
+margin: 0px auto;
+}
+
+.menu-bar ul 
+{
+	margin: 0px;
+	padding: 0px;
+	border-radius: 6px;
+}
+.menu-bar ul li{
+	float: left;
+	background-color: #000;
+	background: linear-gradient(#000, #444, #000);
+	width: 200px;
+	height: 35px;
+	list-style: none;
+	opacity: 0.9;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	
+}
+.menu-bar ul li:last-child
+{
+	border-bottom-right-radius:6px;	
+	border-top-right-radius: 6px;
+}
+.menu-bar ul li:first-child
+{
+	border-bottom-left-radius:6px;	
+	border-top-left-radius: 6px;
+}
+.menu-bar ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+.menu-bar ul li ul li{
+	display: none;
+}
+.menu-bar ul li a:hover{
+	color: red;
+}
+.menu-bar ul li:hover ul li{
+	display: block;
+}
+.sub-hed h2{
+text-align: center;
+}
+.about-img{
+	float: left;
+}
+.about-img img{
+	
+	margin-right: 4px;
+	border: 1px solid black;
+}
+.about-text{
+	text-align: center;
+}
+.about-text h3{
+		text-align: center;
+}
+.about-text p{
+	font-size: 22px;
+}
+.bottom-bar{
+	margin-top: 150px;
+	width: 1000px;
+	border-radius: 3px;
+	height: 50px;
+	background: black;
+}
+.bottom-bar p{
+	padding: 10px;
+	color: white;
+}

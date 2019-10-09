@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us Golden gate</title>
+	<link rel="stylesheet" type="text/css" href="css/contactus.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<script type="text/javascript">
+		
+		function validation() {
+			var name = document.contact.name;
+			var email = document.contact.email;
+			var subject = document.contact.subject;
+			var comment = document.contact.comment;
+
+			if(!checkEmptyField(name,email,subject,comment)){
+				alert("You must fill all fields.");
+				return false;
+			}
+
+			if(!checkLetters(name)){
+				alert("Name must have characters only");
+				return false;
+			}
+
+			if(!checkEmail(email)){
+				alert("Email format is not valid");
+				return false;
+			}
+
+			if(!checkLetters(subject)){
+				alert("Subject must have characters only");
+				return false;
+				
+			}
+
+			alert("All Validations are okay");
+
+			return true;
+
+		}
+			function checkEmptyField(name,email, subject, comment){
+			if((name.value == "")||(email.value == "")||(subject.value == "")||(comment.value == "")){
+				
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+
+		function checkLetters(string){
+			var letters = /^[A-Za-z]+$/;
+			if(string.value.match(letters)){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+
+		function checkAlphaNumeric(string){
+			var alphanumerics = /^[0-9a-zA-Z- /]+$/;
+			if(string.value.match(alphanumerics)){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+
+		function checkNumbers(string){
+			var numbers = /^[0-9]+$/;
+			if(string.value.match(numbers)){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+
+		function checkEmail(string){
+			var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			if(string.value.match(emailformat)){
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+	</script>
+</head>
+<div class="wrapper">
+	<div class="top-bar clearfix">
+		<div class="top-bar-link">
+		<ul>
+		<li><a href="signup.html">Sign Up</a></li>
+		<li><a href="main.html">Sign In</a></li>
+		</ul>	
+		</div>
+		<div class="top-bar-search">
+			<form method="get" action="regi.html"></form>
+			<input type="search" name="Search-box">
+			<button type="submit"></button>		
+		</div>
+	</div>	
+	<header class="clearfix">
+			<div class="logo">
+				<img src="img/lo.png">
+			</div>
+			<div class="social-media">
+				<ul>
+					<li><a href="http://www.linkedin.com"><i class="fab fa-linkedin fa-fw"></i></a></li>
+					<li><a href="http://www.twitter.com"><i class="fab fa-twitter-square fa-fw"></i></a></li>
+					<li><a href="http://www.pinterest.com"><i class="fab fa-pinterest-square fa-fw"></i></a></li>
+					<li><a href="http://www.google.com"><i class="fab fa-google fa-fw"></i></a></li>
+				</ul>
+			</div>
+	</header>
+	<div class="menu-bar">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">Occaptions</a>
+				<ul>
+					<li><a href="home.html"> Weeding  </a></li>
+					<li><a href="#"> Birthday </a></li>
+					<li><a href="#"> Othrs    </a></li>
+				</ul>
+			</li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="aboutus.html">About Us</a>
+					<ul>
+						<li><a href="#">Our Team</a></li>
+						<li><a href="#">Mission &amp; Vision</a></li>
+						<li><a href="#">Resources</a></li>
+					</ul>
+				</li>
+				<li><a href="contactus.html">Contact Us</a></li>
+		</ul>
+		
+	</div>
+	<section class="section clearfix">
+		<h2>Contact Us</h2>
+		<hr><hr>
+		<p>Please feel free to contact us for any comments,question,appointment or etc..</p>
+		<fieldset class="fieldset-box">
+			<legend>
+				<p>Contact Box</p>
+			</legend>
+
+	<form name="contact" onsubmit="return validation();">
+			<table class="table-contact" width="800" border="0">
+  
+    <tr>
+      <td width="216" height="60"><label for="textfield">Name:</label></td>
+        
+      <td width="155"><label for="textfield2"></label>
+        <input class="text-box" type="text" name="name" id="textfield2" placeholder="Name"></td>
+    </tr>
+       <tr>
+      <td height="58"><label for="email">Email Address:</label>
+        </td>
+        <td><input class="text-box" type="email" name="email" id="email" placeholder=" Email Address"></td>
+    </tr>
+    <tr>
+      <td width="216" height="60"><label for="textfield">Subject:</label></td>
+        
+      <td width="155"><label for="textfield2"></label>
+        <input class="text-box" type="text" name="subject" id="textfield2" placeholder="Subject"></td>
+    </tr>
+    <tr>
+      <td width="216" height="60"><label for="textfield">Comments:</label></td>
+        
+      <td width="155"><label for="textfield2"></label>
+        <input class="comment" type="text" name="comment" id="textfield2" placeholder="Message"></td>
+    </tr>
+     <tr>
+      <td height="59">&nbsp;</td>
+      <td><input class="button-f" type="submit" name="onsubmit" id="button" value="Submit"></td>
+    </tr>
+</table>
+</form>
+		</fieldset>	
+	</section>
+	<div class="bottom-bar">
+		<p>&copy; Copyright 2018-Golden Gate</p>
+		
+	</div>
+</div>
+<body>
+
+</body>
+</html>
